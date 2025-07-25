@@ -5,7 +5,8 @@ Daily remote sensing data is used to predict sea temperature for the same day, w
 ## 💻 Usage  
 Run **`Model_run.bat`**.  
 The script automatically downloads OSTIA and AVISO data from Copernicus via the code source, processes the input data, and performs temperature prediction using the model.  
-The prediction results are saved as NetCDF4 files in the **`01_3D_temp_results`** folder.
+The prediction results are saved as NetCDF4 files in the **`01_3D_temp_results`** folder.  
+**Note:** The downloaded and processed data for the execution date will be stored in `00_Data_n_wgts/02_Daily_data`.
 
 ## 🧾 Requirements
 - `tensorflow`  
