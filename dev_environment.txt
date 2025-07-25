@@ -1,0 +1,18 @@
+# dev_environment.txt
+#
+# This file lists the main dependencies used during development.
+# It has been manually trimmed to include only key packages.
+#
+# Do NOT use this file directly for environment recreation.
+# Instead, refer to environment.yml or requirements.txt if available.
+#
+# Last updated: 2025-07-26
+# Name                    Version                   Build  Channel
+copernicusmarine          2.2.1                    pypi_0    pypi
+dask                      2023.12.1                pypi_0    pypi
+netcdf4                   1.6.5           nompi_py310h6477780_100    conda-forge
+numpy                     1.26.3          py310hf667824_0    conda-forge
+pandas                    2.2.0           py310hecd3228_0    conda-forge
+python                    3.10.13         h4de0772_1_cpython    conda-forge
+tensorflow                2.10.0                   pypi_0    pypi
+xarray                    2023.11.0                pypi_0    pypi

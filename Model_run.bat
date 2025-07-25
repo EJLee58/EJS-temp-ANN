@@ -1,0 +1,3 @@
+python 99_Src/S01_Remote_sensing_data_dwld.py
+python 99_Src/S02_Make_inputs.py
+python 99_Src/S03_Estimate_3D_temp_field.py
