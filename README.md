@@ -13,4 +13,4 @@ The prediction results are saved as NetCDF4 files in the **`01_3D_temp_results`*
 - `copernicusmarine`  
   *(Requires a Copernicus Marine account and login credentials: [https://marine.copernicus.eu](https://marine.copernicus.eu))*
 
-📄 For full development dependencies, see [`dev_environment.txt`](./dev_environment.txt).
+📄 For development dependencies, see [`dev_environment.txt`](./dev_environment.txt).
