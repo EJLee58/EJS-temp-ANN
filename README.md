@@ -8,9 +8,13 @@ The script automatically downloads OSTIA and AVISO data from Copernicus via the 
 The prediction results are saved as NetCDF4 files in the **`01_3D_temp_results`** folder.  
 **Note:** The downloaded and processed data for the execution date will be stored in `00_Data_n_wgts/02_Daily_data`.
 
-## 🧾 Requirements
+## 📄 Requirements
 - `tensorflow`  
 - `copernicusmarine`  
   *(Requires a Copernicus Marine account and login credentials: [https://marine.copernicus.eu](https://marine.copernicus.eu))*
+ For development dependencies, see [`dev_environment.txt`](./dev_environment.txt).
 
-📄 For development dependencies, see [`dev_environment.txt`](./dev_environment.txt).
+## 🛡️ License
+The code and dataset are released under the [CC BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/).
+They are **freely available for research and non-commercial use**.
+For commercial use, please contact the authors.
