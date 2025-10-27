@@ -26,12 +26,13 @@ for var in woa_pre:
     tmp = woa_pre[var]
     tmp -= np.mean(tmp.values) 
     tmp /= np.std(tmp.values) 
-
-stats = xr.open_mfdataset(ddir+'01_Fixed_data/*stat.nc')
+    
+stls = [glob.glob(ddir+'01_Fixed_data/*%s_stat.nc'%x)[0] for x in ['OSTIA','AVISO']]
 sfls = [glob.glob(ddir+'02_Daily_data/%s*.nc'%x)[-1] for x in ['OSTIA','AVISO']]
 itp_mat = []
-for s, sfnm in enumerate(sfls):
+for s, (sfnm, stnm) in enumerate(zip(sfls, stls)):
     tmp = xr.open_dataset(sfnm).rename({'longitude':'lon', 'latitude':'lat'}).load()
+    stats = xr.open_dataset(stnm)
     if s==0:
         tmp = tmp.rename({'analysed_sst':'sst'})
     tmp = tmp.drop_vars('time').squeeze()
